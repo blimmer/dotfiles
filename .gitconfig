@@ -1,0 +1,30 @@
+[hub]
+        protocol = https
+[user]
+        name = Ben Limmer
+        email = ben@benlimmer.com
+        signingkey = 0F92F1EA
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore_global
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[help]
+        autocorrect = 1
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+[alias]
+        pushf = push --force-with-lease
+[commit]
+        gpgsign = true
+[gpg]
+        program = /usr/local/bin/gpg
