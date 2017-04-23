@@ -3,8 +3,9 @@
 # -------------------------------------------------------------------
 # Setup
 # -------------------------------------------------------------------
-export PATH=node_modules/.bin:$PATH
+export PATH=/usr/local/sbin:node_modules/.bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
+source $HOME/.dotfiles/secrets 2>/dev/null
 
 # -------------------------------------------------------------------
 # Theme
@@ -15,7 +16,7 @@ DEFAULT_USER="blimmer"
 # -------------------------------------------------------------------
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
-plugins=(git gpg-agent rbenv nvm npm tmux tmuxinator)
+plugins=(osx git gpg-agent rbenv nvm npm tmux tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,7 +24,8 @@ source $ZSH/oh-my-zsh.sh
 # Aliases - System
 # -------------------------------------------------------------------
 alias cl='clear'
-alias ag='ack --ignore-dir=log'
+alias mux='tmuxinator'
+alias emacs='/usr/local/Cellar/emacs-plus/25.1/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # -------------------------------------------------------------------
 # Aliases - Safeguards
@@ -54,3 +56,9 @@ alias dev-test='ember t -s --launch Chrome'
 # Aliases - Ruby
 # -------------------------------------------------------------------
 alias migrate!='bundle exec rake db:migrate db:test:prepare'
+
+# -------------------------------------------------------------------
+# NVM
+# -------------------------------------------------------------------
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
