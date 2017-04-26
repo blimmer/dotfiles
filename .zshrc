@@ -16,7 +16,7 @@ DEFAULT_USER="blimmer"
 # -------------------------------------------------------------------
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
-plugins=(osx git gpg-agent rbenv nvm npm tmux tmuxinator)
+plugins=(osx git gpg-agent rbenv nvm npm tmux tmuxinator yarn zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
