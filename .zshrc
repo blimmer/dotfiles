@@ -16,7 +16,19 @@ DEFAULT_USER="blimmer"
 # -------------------------------------------------------------------
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
-plugins=(osx git gpg-agent rbenv nvm npm tmux tmuxinator yarn zsh-autosuggestions)
+plugins=(
+	bundler
+	git
+	gpg-agent
+	rbenv
+	nvm
+	npm
+	tmux
+	tmuxinator
+	yarn
+	zsh-autosuggestions
+	zsh-iterm-touchbar
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,7 +37,6 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------------------------------------------
 alias cl='clear'
 alias mux='tmuxinator'
-alias emacs='/usr/local/Cellar/emacs-plus/25.1/Emacs.app/Contents/MacOS/Emacs -nw'
 
 # -------------------------------------------------------------------
 # Aliases - Safeguards
@@ -49,16 +60,9 @@ fi
 # -------------------------------------------------------------------
 # Aliases - Ember
 # -------------------------------------------------------------------
-alias clean-ember='rm -fr node_modules bower_components tmp dist && bower install && npm install'
-alias dev-test='ember t -s --launch Chrome'
+alias dev-test='ember t -s --launch x'
 
 # -------------------------------------------------------------------
 # Aliases - Ruby
 # -------------------------------------------------------------------
 alias migrate!='bundle exec rake db:migrate db:test:prepare'
-
-# -------------------------------------------------------------------
-# NVM
-# -------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
