@@ -40,3 +40,8 @@ Thumbs.db
 #########
 *.org
 *.org_archive
+
+# vscode #
+##########
+.vscode
+vscode_node_launcher.sh
