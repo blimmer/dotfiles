@@ -3,7 +3,6 @@
 # -------------------------------------------------------------------
 # Setup
 # -------------------------------------------------------------------
-export PATH=/usr/local/sbin:node_modules/.bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 source $HOME/.dotfiles/secrets 2>/dev/null
 
@@ -17,9 +16,11 @@ DEFAULT_USER="blimmer"
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
 plugins=(
+	branch-manager
 	bundler
 	git
 	gpg-agent
+	golang
 	rbenv
 	nvm
 	npm
@@ -66,3 +67,25 @@ alias dev-test='ember t -s --launch x'
 # Aliases - Ruby
 # -------------------------------------------------------------------
 alias migrate!='bundle exec rake db:migrate db:test:prepare'
+
+# -------------------------------------------------------------------
+# Aliases - K8s
+# -------------------------------------------------------------------
+alias kops='aws-vault kops-admin -- kops'
+alias kops-prod='aws-vault exec kops-admin -- kops --state=s3://kops-store.ibops.net --name k8s.ibops.net'
+alias kops-stage='aws-vault exec kops-staging -- kops --state=s3://kops-store-staging.ibops.net --name k8s-staging.ibops.net'
+
+# -------------------------------------------------------------------
+# Go
+# -------------------------------------------------------------------
+export GOPATH=$HOME/code/go
+
+# -------------------------------------------------------------------
+# Path
+# -------------------------------------------------------------------
+export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$PATH
+
+
+# -------------------------------------------------------------------
+# Untracked
+# -------------------------------------------------------------------
