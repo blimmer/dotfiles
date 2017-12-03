@@ -4,12 +4,13 @@
 # Setup
 # -------------------------------------------------------------------
 export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh-custom
 source $HOME/.dotfiles/secrets 2>/dev/null
 
 # -------------------------------------------------------------------
 # Theme
 # -------------------------------------------------------------------
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster" # customized slightly - see custom directory
 DEFAULT_USER="blimmer"
 
 # -------------------------------------------------------------------
@@ -28,6 +29,7 @@ plugins=(
 	tmuxinator
 	yarn
 	zsh-autosuggestions
+	zsh-aws-vault
 	zsh-iterm-touchbar
 )
 
@@ -38,6 +40,7 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------------------------------------------
 alias cl='clear'
 alias mux='tmuxinator'
+alias reload!='source ~/.zshrc'
 
 # -------------------------------------------------------------------
 # Aliases - Safeguards
