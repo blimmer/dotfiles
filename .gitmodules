@@ -6,7 +6,7 @@
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "oh-my-zsh-custom/plugins/zsh-aws-vault"]
 	path = oh-my-zsh-custom/plugins/zsh-aws-vault
-	url = https://github.com/blimer/zsh-aws-vault.git
+	url = https://github.com/blimmer/zsh-aws-vault.git
 [submodule "oh-my-zsh-custom/plugins/zsh-iterm-touchbar"]
 	path = oh-my-zsh-custom/plugins/zsh-iterm-touchbar
 	url = https://github.com/iam4x/zsh-iterm-touchbar.git
