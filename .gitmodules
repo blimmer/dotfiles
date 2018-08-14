@@ -10,3 +10,6 @@
 [submodule "oh-my-zsh-custom/plugins/zsh-iterm-touchbar"]
 	path = oh-my-zsh-custom/plugins/zsh-iterm-touchbar
 	url = https://github.com/iam4x/zsh-iterm-touchbar.git
+[submodule "oh-my-zsh-custom/plugins/history-search-multi-word"]
+	path = oh-my-zsh-custom/plugins/history-search-multi-word
+	url = https://github.com/zdharma/history-search-multi-word.git

@@ -22,13 +22,12 @@ plugins=(
 	git
 	gpg-agent
 	golang
+	history-search-multi-word
 	rbenv
 	nvm
 	npm
 	tmux
 	tmuxinator
-	yarn
-	zsh-autosuggestions
 	zsh-aws-vault
 	zsh-iterm-touchbar
 )
@@ -62,6 +61,11 @@ then
 fi
 
 # -------------------------------------------------------------------
+# Aliases - Git
+# -------------------------------------------------------------------
+alias gcd='cd $(git rev-parse --show-toplevel)'
+
+# -------------------------------------------------------------------
 # Aliases - Ember
 # -------------------------------------------------------------------
 alias dev-test='ember t -s --launch x'
@@ -84,10 +88,24 @@ alias kops-stage='aws-vault exec kops-staging -- kops --state=s3://kops-store-st
 export GOPATH=$HOME/code/go
 
 # -------------------------------------------------------------------
+# Python
+# -------------------------------------------------------------------
+PYENV_ROOT=$(pyenv root)
+PYENV_SHIMS_PATH=$PYENV_ROOT/shims
+PYTHON_BIN_PATH=$HOME/.local/bin
+PYTHON_PATH=$PYENV_SHIMS_PATH:$PYTHON_BIN_PATH
+
+# -------------------------------------------------------------------
 # Path
 # -------------------------------------------------------------------
-export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$PATH
+export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$HOME/.cargo/bin:$PYTHON_PATH:$PATH
 
+# -------------------------------------------------------------------
+# aws-vault
+# -------------------------------------------------------------------
+export AWS_SESSION_TTL=12h
+export AWS_FEDERATION_TOKEN_TTL=12h
+export AWS_ASSUME_ROLE_TTL=1h
 
 # -------------------------------------------------------------------
 # Untracked

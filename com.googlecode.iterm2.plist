@@ -311,17 +311,19 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1024 -562 620 392 494 -1050 1680 1028 </string>
+	<string>530 489 620 392 0 0 1680 1028 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>220 99 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>163 297 918 401 0 0 1680 1050 </string>
+	<string>838 387 770 429 0 0 1680 1028 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 594 592 584 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>835 49 826 979 0 0 1680 1028 </string>
+	<string>3 51 834 977 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1937 132 777 1030 1920 0 1920 1178 </string>
+	<string>781 100 1193 1132 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 45 1680 983 0 0 1680 1028 </string>
+	<string>1426 241 945 1098 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>1940 315 658 639 1920 0 1920 1178 </string>
 	<key>New Bookmarks</key>
@@ -1893,11 +1895,17 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-21T16:50:53Z</date>
+	<date>2018-07-09T14:15:15Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>Secure Input</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>StretchTabsToFillBar</key>
+	<true/>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1505747200</real>
 	<key>WordCharacters</key>
@@ -1905,6 +1913,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.7</string>
 </dict>
 </plist>
