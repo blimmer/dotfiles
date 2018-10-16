@@ -76,13 +76,6 @@ alias dev-test='ember t -s --launch x'
 alias migrate!='bundle exec rake db:migrate db:test:prepare'
 
 # -------------------------------------------------------------------
-# Aliases - K8s
-# -------------------------------------------------------------------
-alias kops='aws-vault kops-admin -- kops'
-alias kops-prod='aws-vault exec kops-admin -- kops --state=s3://kops-store.ibops.net --name k8s.ibops.net'
-alias kops-stage='aws-vault exec kops-staging -- kops --state=s3://kops-store-staging.ibops.net --name k8s-staging.ibops.net'
-
-# -------------------------------------------------------------------
 # Go
 # -------------------------------------------------------------------
 export GOPATH=$HOME/code/go
