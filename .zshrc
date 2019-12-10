@@ -17,12 +17,14 @@ DEFAULT_USER="blimmer"
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
 plugins=(
+	asdf
 	branch-manager
 	bundler
 	git
 	gpg-agent
 	golang
 	history-search-multi-word
+	jenv
 	rbenv
 	nvm
 	npm
@@ -79,14 +81,6 @@ alias migrate!='bundle exec rake db:migrate db:test:prepare'
 # Go
 # -------------------------------------------------------------------
 export GOPATH=$HOME/code/go
-
-# -------------------------------------------------------------------
-# Python
-# -------------------------------------------------------------------
-PYENV_ROOT=$(pyenv root)
-PYENV_SHIMS_PATH=$PYENV_ROOT/shims
-PYTHON_BIN_PATH=$HOME/.local/bin
-PYTHON_PATH=$PYENV_SHIMS_PATH:$PYTHON_BIN_PATH
 
 # -------------------------------------------------------------------
 # Path
