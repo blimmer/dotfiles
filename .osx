@@ -201,6 +201,9 @@ defaults write com.apple.dock showhidden -bool true
 # Enable the 'reduce transparency' option on Yosemite. Save GPU cycles.
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
 # Add iOS Simulator to Applications folder.
 if [[ "$RUN_AS_ROOT" = true ]]; then
   sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app /Applications/Simulator.app
