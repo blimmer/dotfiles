@@ -42,6 +42,7 @@ source $ZSH/oh-my-zsh.sh
 alias cl='clear'
 alias mux='tmuxinator'
 alias reload!='source ~/.zshrc'
+alias hex='openssl rand -hex 16'
 
 # -------------------------------------------------------------------
 # Aliases - Safeguards
