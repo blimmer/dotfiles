@@ -24,9 +24,6 @@ plugins=(
 	gpg-agent
 	golang
 	history-search-multi-word
-	jenv
-	rbenv
-	nvm
 	npm
 	tmux
 	tmuxinator
@@ -84,14 +81,6 @@ export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$HOME/.cargo/bin:$PYTH
 export AWS_SESSION_TOKEN_TTL=12h
 export AWS_FEDERATION_TOKEN_TTL=12h
 export AWS_ASSUME_ROLE_TTL=6h
-
-# -------------------------------------------------------------------
-# NVM
-# -------------------------------------------------------------------
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -------------------------------------------------------------------
 # iTerm
