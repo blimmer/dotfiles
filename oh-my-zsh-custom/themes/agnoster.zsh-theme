@@ -219,11 +219,16 @@ prompt_aws_vault() {
   [[ $vault_segment != '' ]] && prompt_segment cyan black "$vault_segment"
 }
 
+prompt_time() {
+  prompt_segment black white "%*"
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
-  prompt_status
+  # prompt_status
   # prompt_virtualenv
+  prompt_time
   prompt_aws_vault
   prompt_context
   prompt_dir
