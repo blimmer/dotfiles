@@ -46,3 +46,7 @@ Thumbs.db
 .vscode/*
 vscode_node_launcher.sh
 !/.vscode/launch.json
+
+# node #
+########
+node_modules
