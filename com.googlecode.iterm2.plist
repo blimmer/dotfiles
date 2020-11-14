@@ -387,13 +387,13 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 126 224 275 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>696 736 400 129 0 0 1792 1097 </string>
+	<string>696 737 400 129 0 0 1792 1097 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 779 620 392 0 0 2560 1417 </string>
+	<string>586 539 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1709 43 849 1374 0 0 2560 1417 </string>
+	<string>1709 46 849 1371 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>228 115 665 488 0 0 2560 1417 </string>
+	<string>0 44 1705 1373 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1123,6 +1123,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -1983,9 +1985,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7</string>
-		<string>3.3.8</string>
 		<string>3.3.9</string>
+		<string>3.3.8</string>
+		<string>3.3.11</string>
+		<string>3.3.7</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -1994,14 +1998,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{869, 1114}</string>
+		<string>{644, 1115}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>ED88E850-696B-4838-9511-60218322FE7F</string>
 	<key>NoSyncLastTipTime</key>
-	<real>607962888.82513797</real>
+	<real>618244900.315081</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>79</integer>
+	<integer>176</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>601237090.49090195</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2758,57 +2762,72 @@
 	<real>600970504.96762896</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0017</string>
-		<string>0029</string>
-		<string>0001</string>
-		<string>0013</string>
-		<string>0025</string>
-		<string>0037</string>
-		<string>0021</string>
-		<string>0033</string>
-		<string>0045</string>
-		<string>0041</string>
-		<string>0006</string>
-		<string>0018</string>
-		<string>0002</string>
-		<string>0014</string>
-		<string>0026</string>
-		<string>0038</string>
-		<string>0010</string>
-		<string>0022</string>
-		<string>000</string>
-		<string>0034</string>
-		<string>0046</string>
 		<string>0030</string>
-		<string>0042</string>
-		<string>0007</string>
-		<string>0019</string>
-		<string>0003</string>
-		<string>0015</string>
-		<string>0027</string>
-		<string>0039</string>
-		<string>0011</string>
 		<string>0023</string>
-		<string>0035</string>
-		<string>0047</string>
-		<string>0031</string>
-		<string>0043</string>
-		<string>0008</string>
-		<string>0004</string>
 		<string>0016</string>
-		<string>0028</string>
-		<string>0000</string>
-		<string>0012</string>
-		<string>0024</string>
-		<string>0036</string>
-		<string>0048</string>
-		<string>0020</string>
-		<string>0032</string>
-		<string>0044</string>
-		<string>0040</string>
 		<string>0009</string>
+		<string>0059</string>
+		<string>0002</string>
+		<string>0045</string>
+		<string>0038</string>
+		<string>0052</string>
+		<string>0017</string>
+		<string>0031</string>
+		<string>0024</string>
+		<string>0010</string>
+		<string>0046</string>
+		<string>0003</string>
+		<string>0039</string>
+		<string>0053</string>
+		<string>0060</string>
+		<string>0025</string>
+		<string>0018</string>
+		<string>0032</string>
+		<string>0011</string>
+		<string>0047</string>
+		<string>0004</string>
+		<string>0054</string>
+		<string>0061</string>
+		<string>0033</string>
+		<string>0026</string>
+		<string>0019</string>
+		<string>0040</string>
+		<string>0012</string>
+		<string>0048</string>
 		<string>0005</string>
+		<string>0055</string>
+		<string>0062</string>
+		<string>0041</string>
+		<string>0034</string>
+		<string>0027</string>
+		<string>0013</string>
 		<string>0049</string>
+		<string>0006</string>
+		<string>0020</string>
+		<string>0056</string>
+		<string>0063</string>
+		<string>0042</string>
+		<string>0035</string>
+		<string>0028</string>
+		<string>0021</string>
+		<string>0014</string>
+		<string>0007</string>
+		<string>0057</string>
+		<string>0000</string>
+		<string>0029</string>
+		<string>0050</string>
+		<string>0043</string>
+		<string>0036</string>
+		<string>0022</string>
+		<string>0015</string>
+		<string>0008</string>
+		<string>0058</string>
+		<string>0001</string>
+		<string>0037</string>
+		<string>000</string>
+		<string>0044</string>
+		<string>0051</string>
+		<string>0064</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -2858,15 +2877,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-07T14:34:27Z</date>
+	<date>2020-08-04T14:59:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>245581296</integer>
+	<integer>136688691</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StretchTabsToFillBar</key>
@@ -2888,6 +2907,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 </dict>
 </plist>
