@@ -80,7 +80,6 @@ export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$HOME/.cargo/bin:$PYTH
 # -------------------------------------------------------------------
 export AWS_SESSION_TOKEN_TTL=12h
 export AWS_FEDERATION_TOKEN_TTL=12h
-export AWS_ASSUME_ROLE_TTL=6h
 
 # -------------------------------------------------------------------
 # iTerm
