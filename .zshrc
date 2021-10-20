@@ -73,7 +73,7 @@ export GOPATH=$HOME/code/go
 # -------------------------------------------------------------------
 # Path
 # -------------------------------------------------------------------
-export PATH=/usr/local/sbin:node_modules/.bin:$GOPATH/bin:$HOME/.cargo/bin:$PYTHON_PATH:$PATH
+export PATH=/usr/local/sbin:$GOPATH/bin:$HOME/.cargo/bin:$PYTHON_PATH:$PATH
 
 # -------------------------------------------------------------------
 # aws-vault
