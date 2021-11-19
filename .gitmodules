@@ -4,9 +4,6 @@
 [submodule "oh-my-zsh-custom/plugins/zsh-aws-vault"]
 	path = oh-my-zsh-custom/plugins/zsh-aws-vault
 	url = https://github.com/blimmer/zsh-aws-vault.git
-[submodule "oh-my-zsh-custom/plugins/zsh-iterm-touchbar"]
-	path = oh-my-zsh-custom/plugins/zsh-iterm-touchbar
-	url = https://github.com/iam4x/zsh-iterm-touchbar.git
 [submodule "oh-my-zsh-custom/plugins/history-search-multi-word"]
 	path = oh-my-zsh-custom/plugins/history-search-multi-word
 	url = https://github.com/zdharma/history-search-multi-word.git

@@ -29,7 +29,6 @@ plugins=(
 	tmuxinator
 	yarn
 	zsh-aws-vault
-	zsh-iterm-touchbar
 )
 
 source $ZSH/oh-my-zsh.sh
