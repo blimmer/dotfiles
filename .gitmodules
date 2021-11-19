@@ -1,9 +1,6 @@
 [submodule "oh-my-zsh-custom/plugins/branch-manager"]
 	path = oh-my-zsh-custom/plugins/branch-manager
 	url = https://github.com/elstgav/branch-manager.git
-[submodule "oh-my-zsh-custom/plugins/zsh-autosuggestions"]
-	path = oh-my-zsh-custom/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "oh-my-zsh-custom/plugins/zsh-aws-vault"]
 	path = oh-my-zsh-custom/plugins/zsh-aws-vault
 	url = https://github.com/blimmer/zsh-aws-vault.git
