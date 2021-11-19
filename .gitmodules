@@ -6,4 +6,4 @@
 	url = https://github.com/blimmer/zsh-aws-vault.git
 [submodule "oh-my-zsh-custom/plugins/history-search-multi-word"]
 	path = oh-my-zsh-custom/plugins/history-search-multi-word
-	url = https://github.com/zdharma/history-search-multi-word.git
+	url = https://github.com/zdharma-continuum/history-search-multi-word.git
