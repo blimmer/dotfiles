@@ -27,6 +27,7 @@ plugins=(
 	npm
 	tmux
 	tmuxinator
+	yarn
 	zsh-aws-vault
 	zsh-iterm-touchbar
 )
