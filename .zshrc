@@ -25,8 +25,6 @@ plugins=(
 	golang
 	history-search-multi-word
 	npm
-	tmux
-	tmuxinator
 	yarn
 	zsh-aws-vault
 )
@@ -37,7 +35,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases - System
 # -------------------------------------------------------------------
 alias cl='clear'
-alias mux='tmuxinator'
 alias reload!='source ~/.zshrc'
 alias hex='openssl rand -hex 16'
 

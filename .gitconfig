@@ -18,16 +18,12 @@
         keepBackup = false
 [help]
         autocorrect = 1
-[alias]
-        pushf = push --force-with-lease
 [commit]
         gpgsign = true
 [gpg]
         program = /usr/local/bin/gpg
-
 [pull]
         rebase = false
-
 [rebase]
         autoStash = true
 [filter "lfs"]
