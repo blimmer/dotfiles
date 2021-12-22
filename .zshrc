@@ -84,10 +84,5 @@ export AWS_FEDERATION_TOKEN_TTL=12h
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 # -------------------------------------------------------------------
-# ASDF - temporary - see https://github.com/ohmyzsh/ohmyzsh/pull/10481
-# -------------------------------------------------------------------
-export ASDF_DIR="$(brew --prefix asdf)/libexec"
-
-# -------------------------------------------------------------------
 # Untracked
 # -------------------------------------------------------------------
