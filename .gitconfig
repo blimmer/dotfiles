@@ -21,7 +21,8 @@
 [commit]
         gpgsign = true
 [gpg]
-        program = /usr/local/bin/gpg
+	# TODO: apple silicon vs. intel brew location
+        program = /opt/homebrew/bin/gpg
 [pull]
         rebase = false
 [rebase]
