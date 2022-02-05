@@ -62,6 +62,11 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Disable UI audio
 defaults write com.apple.sound.uiaudio.enabled -int 0
 
+# Use 24 hour time
+defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm"
+defaults write com.apple.menuextra.clock ShowAMPM -bool false
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
