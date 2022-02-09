@@ -59,6 +59,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+# Disable two-space auto-insert's a period character
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled - bool false
+
 # Disable UI audio
 defaults write com.apple.sound.uiaudio.enabled -int 0
 
