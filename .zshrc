@@ -56,6 +56,7 @@ source $ZSH/oh-my-zsh.sh
 alias cl='clear'
 alias reload!='source ~/.zshrc'
 alias hex='openssl rand -hex 16'
+alias wtfcache='sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache;'
 
 # -------------------------------------------------------------------
 # Aliases - Safeguards
