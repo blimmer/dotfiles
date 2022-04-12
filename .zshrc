@@ -94,6 +94,13 @@ export AWS_SESSION_TOKEN_TTL=12h
 export AWS_FEDERATION_TOKEN_TTL=12h
 
 # -------------------------------------------------------------------
+# aws-cdk
+# -------------------------------------------------------------------
+alias clist="yarn cdk list"
+alias cdiff="yarn cdk diff"
+alias cdep="yarn cdk deploy --require-approval never --progress events"
+
+# -------------------------------------------------------------------
 # iTerm
 # -------------------------------------------------------------------
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
