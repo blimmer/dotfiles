@@ -101,6 +101,13 @@ alias cdiff="yarn cdk diff"
 alias cdep="yarn cdk deploy --require-approval never --progress events"
 
 # -------------------------------------------------------------------
+# Node/NPM
+# -------------------------------------------------------------------
+function pkgversions() {
+	npm info $1 versions
+}
+
+# -------------------------------------------------------------------
 # iTerm
 # -------------------------------------------------------------------
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
