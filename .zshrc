@@ -121,5 +121,10 @@ alias venv="source venv/bin/activate"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 # -------------------------------------------------------------------
+# 1Password
+# -------------------------------------------------------------------
+source ~/.config/op/plugins.sh || true
+
+# -------------------------------------------------------------------
 # Untracked
 # -------------------------------------------------------------------
