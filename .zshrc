@@ -39,11 +39,13 @@ plugins=(
 	asdf
 	branch-manager
 	bundler
+	docker-compose
 	git
 	gpg-agent
 	golang
 	history-search-multi-word
 	npm
+	terraform
 	yarn
 	zsh-aws-vault
 )
