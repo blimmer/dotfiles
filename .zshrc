@@ -91,6 +91,11 @@ alias gcd='cd $(git rev-parse --show-toplevel)'
 alias awhoami="aws sts get-caller-identity | jq '.Arn'"
 
 # -------------------------------------------------------------------
+# asdf
+# -------------------------------------------------------------------
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_available
+
+# -------------------------------------------------------------------
 # aws-vault
 # -------------------------------------------------------------------
 export AWS_SESSION_TOKEN_TTL=12h
