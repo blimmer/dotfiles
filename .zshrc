@@ -41,6 +41,7 @@ plugins=(
 	bundler
 	docker-compose
 	git
+	github-copilot
 	gpg-agent
 	golang
 	history-search-multi-word
