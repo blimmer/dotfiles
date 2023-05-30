@@ -1,7 +1,7 @@
   copilot_what-the-shell () {
     TMPFILE=$(mktemp);
     trap 'rm -f $TMPFILE' EXIT;
-    if /Users/blimmer/.asdf/installs/nodejs/18.12.1/bin/github-copilot-cli what-the-shell "$@" --shellout $TMPFILE; then
+    if github-copilot-cli what-the-shell "$@" --shellout $TMPFILE; then
       if [ -e "$TMPFILE" ]; then
         FIXED_CMD=$(cat $TMPFILE);
 
@@ -18,7 +18,7 @@ alias '??'='copilot_what-the-shell';
   copilot_git-assist () {
     TMPFILE=$(mktemp);
     trap 'rm -f $TMPFILE' EXIT;
-    if /Users/blimmer/.asdf/installs/nodejs/18.12.1/bin/github-copilot-cli git-assist "$@" --shellout $TMPFILE; then
+    if github-copilot-cli git-assist "$@" --shellout $TMPFILE; then
       if [ -e "$TMPFILE" ]; then
         FIXED_CMD=$(cat $TMPFILE);
 
@@ -35,7 +35,7 @@ alias 'git?'='copilot_git-assist';
   copilot_gh-assist () {
     TMPFILE=$(mktemp);
     trap 'rm -f $TMPFILE' EXIT;
-    if /Users/blimmer/.asdf/installs/nodejs/18.12.1/bin/github-copilot-cli gh-assist "$@" --shellout $TMPFILE; then
+    if github-copilot-cli gh-assist "$@" --shellout $TMPFILE; then
       if [ -e "$TMPFILE" ]; then
         FIXED_CMD=$(cat $TMPFILE);
 
