@@ -128,7 +128,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # -------------------------------------------------------------------
 # 1Password
 # -------------------------------------------------------------------
-source ~/.config/op/plugins.sh || true
+test -f ~/.config/op/plugins.sh && source ~/.config/op/plugins.sh
 
 # -------------------------------------------------------------------
 # Untracked
