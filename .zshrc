@@ -96,6 +96,12 @@ alias awhoami="aws sts get-caller-identity | jq '.Arn'"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_available
 
 # -------------------------------------------------------------------
+# awscli
+# -------------------------------------------------------------------
+export AWS_CLI_AUTO_PROMPT=on-partial
+export AWS_PAGER="" # disable
+
+# -------------------------------------------------------------------
 # aws-vault
 # -------------------------------------------------------------------
 export AWS_SESSION_TOKEN_TTL=12h
