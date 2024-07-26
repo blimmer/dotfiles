@@ -3,7 +3,7 @@
 [user]
         name = Ben Limmer
         email = ben@benlimmer.com
-        signingkey = 0F92F1EA
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBpXgVcuFtncFRYl+OLiRxEwGQOnWRAVD6slZj1SgIc9
 [color]
         diff = auto
         status = auto
@@ -21,16 +21,21 @@
 [commit]
         gpgsign = true
 [gpg]
-	# TODO: apple silicon vs. intel brew location
-        program = /opt/homebrew/bin/gpg
+        format = ssh
+[gpg "ssh"]
+        program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [pull]
         rebase = false
 [rebase]
         autoStash = true
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+        required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
 [init]
-	defaultBranch = main
+        defaultBranch = main
+[rerere]
+        enabled = true
+[branch]
+        sort = -committerdate
