@@ -92,7 +92,9 @@ alias awhoami="aws sts get-caller-identity | jq '.Arn'"
 # -------------------------------------------------------------------
 # asdf
 # -------------------------------------------------------------------
+export ASDF_DATA_DIR="$HOME/.asdf"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_available
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 # -------------------------------------------------------------------
 # awscli
@@ -116,6 +118,7 @@ alias cdep="yarn cdk deploy --require-approval never --progress events"
 # -------------------------------------------------------------------
 # Node/NPM
 # -------------------------------------------------------------------
+export COREPACK_ENABLE_AUTO_PIN=0 # do not write packageManager to package.json by default
 function pkgversions() {
 	npm info $1 versions
 }
