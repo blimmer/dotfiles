@@ -144,5 +144,15 @@ test -f ~/.config/op/plugins.sh && source ~/.config/op/plugins.sh
 alias gbrs="git branch --sort=-committerdate"
 
 # -------------------------------------------------------------------
+# docker
+# -------------------------------------------------------------------
+export COMPOSE_BAKE=true # Use `bake` for docker compose builds for performance
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=($HOME/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+# -------------------------------------------------------------------
 # Untracked
 # -------------------------------------------------------------------
