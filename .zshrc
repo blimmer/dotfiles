@@ -113,6 +113,7 @@ export AWS_FEDERATION_TOKEN_TTL=12h
 # -------------------------------------------------------------------
 alias clist="yarn cdk list"
 alias cdiff="yarn cdk diff"
+alias cdifff="yarn cdk diff --no-change-set"
 alias cdep="yarn cdk deploy --require-approval never --progress events"
 
 # -------------------------------------------------------------------
@@ -136,7 +137,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # -------------------------------------------------------------------
 # 1Password
 # -------------------------------------------------------------------
-test -f ~/.config/op/plugins.sh && source ~/.config/op/plugins.sh
+test -f ~/.config/op/plugins.sh && source ~/.config/op/plugins.sh || true
 
 # -------------------------------------------------------------------
 # git

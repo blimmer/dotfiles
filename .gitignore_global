@@ -63,3 +63,8 @@ Temporary Items
 # node #
 ########
 node_modules
+
+# claude #
+##########
+.claude/settings.local.json
+**/.claude/settings.local.json
