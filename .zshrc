@@ -30,7 +30,14 @@ fi
 # -------------------------------------------------------------------
 # Path
 # -------------------------------------------------------------------
-export PATH=$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$GOPATH/bin:$HOME/.cargo/bin$PYTHON_PATH:$PATH
+# Common Paths
+export PATH=$PATH:$HOME/.local/bin
+# Homebrew
+export PATH=$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH
+# Golang
+export PATH=$GOPATH/bin:$PATH
+# Rust
+export PATH=$HOME/.cargo/bin:$PATH
 
 # -------------------------------------------------------------------
 # oh-my-zsh plugins
