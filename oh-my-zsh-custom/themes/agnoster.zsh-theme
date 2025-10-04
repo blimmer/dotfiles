@@ -219,6 +219,13 @@ prompt_aws_vault() {
   [[ $vault_segment != '' ]] && prompt_segment cyan black "$vault_segment"
 }
 
+# Maybe source client-specific prompt configuration (gitignored)
+if [[ -f "${0:A:h}/prompt_client.zsh" ]]; then
+  source "${0:A:h}/prompt_client.zsh"
+else
+  prompt_client() { }
+fi
+
 prompt_time() {
   prompt_segment black white "%*"
 }
@@ -229,6 +236,7 @@ build_prompt() {
   prompt_status
   # prompt_virtualenv
   # prompt_time
+  prompt_client
   prompt_aws_vault
   prompt_context
   prompt_dir

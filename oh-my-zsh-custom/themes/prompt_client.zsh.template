@@ -1,0 +1,26 @@
+# Client-specific prompt segment
+# Copy this file to prompt_client.zsh and customize based on the machine/client setup
+# The .zsh file is gitignored so client info stays private
+
+prompt_client() {
+  # Check if AWS_CONFIG_FILE is set
+  if [[ -n "$AWS_CONFIG_FILE" ]]; then
+    # Extract the suffix after the last period in the file path
+    suffix="${AWS_CONFIG_FILE##*.}"
+
+    # Use a case statement to return an emoji based on the suffix
+    case "$suffix" in
+      "personal")
+        prompt_segment cyan black "👨"
+        ;;
+      "client1")
+        prompt_segment cyan black "🏢"
+        ;;
+      "client2")
+        prompt_segment cyan black "🚀"
+        ;;
+      *)
+        ;;
+    esac
+  fi
+}

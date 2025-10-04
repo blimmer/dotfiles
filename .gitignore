@@ -1,1 +1,4 @@
 secrets
+
+# Client-specific prompt configuration
+oh-my-zsh-custom/themes/prompt_client.zsh
