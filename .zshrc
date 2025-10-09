@@ -68,14 +68,6 @@ alias hex='openssl rand -hex 16'
 alias wtfcache='sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache;'
 
 # -------------------------------------------------------------------
-# Aliases - Safeguards
-# -------------------------------------------------------------------
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias mkdir='mkdir -p'
-
-# -------------------------------------------------------------------
 # Aliases - Pretty Lists
 # -------------------------------------------------------------------
 if $(gls &>/dev/null)
