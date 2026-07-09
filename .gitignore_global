@@ -1,11 +1,21 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# OS generated files (macOS) #
+##############################
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 # Packages #
 ############
@@ -25,31 +35,6 @@
 *.log
 *.sqlite
 
-# OS generated files #
-######################
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# emacs #
-#########
-*.org
-*.org_archive
-
 # vscode #
 ##########
 .vscode/*
@@ -66,5 +51,13 @@ node_modules
 
 # claude #
 ##########
-.claude/settings.local.json
 **/.claude/settings.local.json
+claude-tmp
+.claude/worktrees/*
+
+# personal tooling #
+####################
+.playwright-mcp
+docs/superpowers/
+.aether/notes
+docs/aether
