@@ -27,6 +27,10 @@ else
 	export HOMEBREW_PREFIX=/usr/local
 fi
 
+# Don't let `brew upgrade` touch self-updating casks (Chrome, 1Password, etc.);
+# new default as of Homebrew 6.0 (PR #21882).
+export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
+
 # -------------------------------------------------------------------
 # Path
 # -------------------------------------------------------------------
@@ -138,6 +142,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # 1Password
 # -------------------------------------------------------------------
 test -f ~/.config/op/plugins.sh && source ~/.config/op/plugins.sh || true
+#export NPM_TOKEN="op://Personal/NPM Read-Only/credential"
 
 # -------------------------------------------------------------------
 # git
