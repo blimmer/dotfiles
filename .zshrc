@@ -51,6 +51,7 @@ plugins=(
 	gpg-agent
 	golang
 	history-search-multi-word
+	just
 	npm
 	terraform
 	yarn
