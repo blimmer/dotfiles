@@ -55,9 +55,14 @@ node_modules
 claude-tmp
 .claude/worktrees/*
 
+# agents #
+##########
+.agents/scratch
+
 # personal tooling #
 ####################
 .playwright-mcp
 docs/superpowers/
 .aether/notes
 docs/aether
+.worktrees
