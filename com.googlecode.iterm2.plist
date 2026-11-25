@@ -24,7 +24,11 @@
 	<integer>128000</integer>
 	<key>AitermURL</key>
 	<string>https://api.openai.com/v1/responses</string>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AlternateMouseScroll</key>
+	<true/>
+	<key>ClaudeCodeWorkgroupUpsellSuppressed</key>
 	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
@@ -243,7 +247,7 @@
 	<string>56215951-B9BA-42C2-A740-924EA89FB1B0</string>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0xd-0x20000-0x24</key>
+		<key>0xd-0x20000-0x24-0x1</key>
 		<dict>
 			<key>Action</key>
 			<integer>12</integer>
@@ -261,6 +265,10 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_56215951-B9BA-42C2-A740-924EA89FB1B0</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_56215951-B9BA-42C2-A740-924EA89FB1B0_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -526,7 +534,7 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
-				<key>0xf702-0x280000-0x7b</key>
+				<key>0xf702-0x280000-0x7b-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
@@ -537,7 +545,7 @@
 					<key>Version</key>
 					<integer>1</integer>
 				</dict>
-				<key>0xf703-0x280000-0x7c</key>
+				<key>0xf703-0x280000-0x7c-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
