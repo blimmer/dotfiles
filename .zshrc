@@ -102,7 +102,7 @@ alias code="zed"
 # -------------------------------------------------------------------
 # mise
 # -------------------------------------------------------------------
-export MISE_IDIOMATIC_VERSION_FILE_ENABLE_TOOLS=node,python,ruby,terraform
+export MISE_IDIOMATIC_VERSION_FILE_ENABLE_TOOLS=node,python,ruby,terraform,pnpm
 
 # -------------------------------------------------------------------
 # awscli
