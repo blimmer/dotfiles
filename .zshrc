@@ -47,7 +47,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 # oh-my-zsh plugins
 # -------------------------------------------------------------------
 plugins=(
-	asdf
 	branch-manager
 	bundler
 	docker-compose
@@ -56,6 +55,7 @@ plugins=(
 	golang
 	history-search-multi-word
 	just
+	mise
 	npm
 	terraform
 	yarn
@@ -94,11 +94,15 @@ alias gcd='cd $(git rev-parse --show-toplevel)'
 alias awhoami="aws sts get-caller-identity | jq '.Arn'"
 
 # -------------------------------------------------------------------
-# asdf
+# Aliases - Editor
 # -------------------------------------------------------------------
-export ASDF_DATA_DIR="$HOME/.asdf"
-export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_available
-export PATH="$ASDF_DATA_DIR/shims:$PATH"
+export EDITOR="zed --wait"
+alias code="zed"
+
+# -------------------------------------------------------------------
+# mise
+# -------------------------------------------------------------------
+export MISE_IDIOMATIC_VERSION_FILE_ENABLE_TOOLS=node,python,ruby,terraform
 
 # -------------------------------------------------------------------
 # awscli
@@ -162,4 +166,3 @@ compinit
 # -------------------------------------------------------------------
 # Untracked
 # -------------------------------------------------------------------
-export EDITOR="zed --wait"
